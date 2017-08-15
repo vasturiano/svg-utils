@@ -2,8 +2,13 @@
   "name": "svg-utils",
   "version": "1.0.0",
   "description": "Miscellaneous utility components for manipulating SVG",
-  "main": "index.js",
+  "main": "dist/svg-utils.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
+    "build": "rm -rf dist && mkdir dist && rollup -c --banner \"$(preamble)\"",
+    "watch": "rollup -c -w",
+    "minify": "uglifyjs dist/svg-utils.js -o dist/svg-utils.min.js -c -m --preamble \"$(preamble)\"",
+    "prepublish": "npm run build && npm run minify"
   },
   "repository": {
     "type": "git",
@@ -15,10 +20,24 @@
     "utils",
     "d3"
   ],
-  "author": "Vasco Asturiano <vastur@gmail.com>",
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "http://bl.ocks.org/vasturiano"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vasturiano/svg-utils/issues"
   },
-  "homepage": "https://github.com/vasturiano/svg-utils#readme"
+  "homepage": "https://github.com/vasturiano/svg-utils#readme",
+  "dependencies": {
+    "d3": "^4.10",
+    "kapsule": "^1.3.0"
+  },
+  "devDependencies": {
+    "package-preamble": "~0.1.0",
+    "rollup": "~0.47.4",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-watch": "^4.3",
+    "uglify-js-es6": "^2.8.9"
+  }
 }
