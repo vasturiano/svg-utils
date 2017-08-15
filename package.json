@@ -1,0 +1,24 @@
+{
+  "name": "svg-utils",
+  "version": "1.0.0",
+  "description": "Miscellaneous utility components for manipulating SVG",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasturiano/svg-utils.git"
+  },
+  "keywords": [
+    "svg",
+    "component",
+    "utils",
+    "d3"
+  ],
+  "author": "Vasco Asturiano <vastur@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasturiano/svg-utils/issues"
+  },
+  "homepage": "https://github.com/vasturiano/svg-utils#readme"
+}
