@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --progress --colors --watch",
-    "minify": "uglifyjs dist/svg-utils.js -o dist/svg-utils.min.js -c -m --preamble \"$(preamble)\"",
+    "minify": "uglifyjs dist/svg-utils.js -o dist/svg-utils.min.js -c -m",
     "prepublish": "npm run build && npm run minify"
   },
   "repository": {
