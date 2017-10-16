@@ -1,6 +1,6 @@
 {
   "name": "svg-utils",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Miscellaneous utility components for manipulating SVG",
   "main": "dist/svg-utils.min.js",
   "module": "dist/svg-utils.mjs",
