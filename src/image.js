@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+import { select as d3Select } from 'd3-selection';
 import Kapsule from 'kapsule';
 
 export default Kapsule({
@@ -27,7 +27,7 @@ export default Kapsule({
         }
     },
     init(el, state) {
-        state.img = d3.select(el).append('image');
+        state.img = d3Select(el).append('image');
     },
     update(state) {
         state.img

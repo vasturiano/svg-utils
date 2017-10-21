@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+import { select as d3Select } from 'd3-selection';
 import Kapsule from 'kapsule';
 
 export default Kapsule({
@@ -11,7 +11,7 @@ export default Kapsule({
         angleFull: { default: 120 }
     },
     init(el, state) {
-        el = d3.select(el);
+        el = d3Select(el);
         state.path = el.append('path');
         state.transform = state.path.append('animateTransform')
             .attr('attributeName', 'transform')

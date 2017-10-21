@@ -1,5 +1,6 @@
+import { scaleLinear as d3ScaleLinear } from 'd3-scale';
+import { select as d3Select } from 'd3-selection';
 import Kapsule from 'kapsule';
-import * as d3 from 'd3';
 
 export default Kapsule({
     props: {
@@ -16,8 +17,8 @@ export default Kapsule({
         transitionDuration: 700
     },
     stateInit: {
-        xScale: d3.scaleLinear(),
-        yScale: d3.scaleLinear()
+        xScale: d3ScaleLinear(),
+        yScale: d3ScaleLinear()
     },
     init(el, state, {
         width,
@@ -28,7 +29,7 @@ export default Kapsule({
         state.yScale.range([margin.top, height-state.margin.bottom]);
 
         // Build dom
-        state.svg = d3.select(el).append('svg')
+        state.svg = d3Select(el).append('svg')
             .attr('width', width)
             .attr('height', height);
 

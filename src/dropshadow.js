@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+import { select as d3Select } from 'd3-selection';
 import Kapsule from 'kapsule';
 
 export default Kapsule({
@@ -7,7 +7,7 @@ export default Kapsule({
         id: { default: `areaGradient${Math.round(Math.random()*10000)}` }
     },
     init(el, state) {
-        state.filter = d3.select(el).append('defs')
+        state.filter = d3Select(el).append('defs')
             .append('filter')
             .attr('height', '130%');
 
