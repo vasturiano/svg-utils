@@ -2,7 +2,7 @@
   "name": "svg-utils",
   "version": "1.2.4",
   "description": "Miscellaneous utility components for manipulating SVG",
-  "pkg": "dist/svg-utils.min.js",
+  "unpkg": "dist/svg-utils.min.js",
   "main": "dist/svg-utils.common.js",
   "module": "dist/svg-utils.mjs",
   "scripts": {
