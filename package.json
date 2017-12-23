@@ -4,7 +4,7 @@
   "description": "Miscellaneous utility components for manipulating SVG",
   "unpkg": "dist/svg-utils.min.js",
   "main": "dist/svg-utils.common.js",
-  "module": "dist/svg-utils.mjs",
+  "module": "dist/svg-utils.module.js",
   "scripts": {
     "build": "rm -rf dist && mkdir dist && rollup -c",
     "watch": "rollup -c -w",
