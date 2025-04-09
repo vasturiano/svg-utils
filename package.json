@@ -3,6 +3,7 @@
   "version": "1.3.2",
   "description": "Miscellaneous utility components for manipulating SVG",
   "type": "module",
+  "jsdelivr": "dist/svg-utils.min.js",
   "unpkg": "dist/svg-utils.min.js",
   "main": "dist/svg-utils.mjs",
   "module": "dist/svg-utils.mjs",
