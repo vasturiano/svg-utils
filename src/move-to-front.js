@@ -1,5 +1,7 @@
 import Kapsule from 'kapsule';
 
 export default Kapsule({
-    init(el) { el.parentNode.appendChild(el); }
+    init(el) {
+      el.nextElementSibling && el.parentNode.appendChild(el);
+    }
 });
